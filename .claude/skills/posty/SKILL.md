@@ -1,6 +1,6 @@
 ---
 name: posty
-description: Pisanie postów dla rodziców po zajęciach z robotyki. Przegląd i wybór zdjęć, tekst postu osobno dla każdej grupy, w stylu instruktora.
+description: Pisanie postów dla rodziców po zajęciach z robotyki LEGO. Przegląd i wybór zdjęć, tekst postu osobno dla każdej grupy, w stylu instruktora.
 ---
 
 # Posty dla rodziców
@@ -10,22 +10,97 @@ lat, w kilku grupach i kilku szkołach, raz w tygodniu. Po zajęciach wrzuca do
 firmowej aplikacji post widoczny dla rodziców: tekst do 500 znaków i kilka
 zdjęć.
 
-## Przebieg
+**Czytelnik to rodzic, który przewija aplikację przez cztery sekundy.** Gdy
+jakaś zasada niżej nie rozstrzyga sprawy, rozstrzygnij ją tym zdaniem.
 
-Instruktor wysyła zdjęcia i mówi, co się działo. Cztery kroki, po każdym
-zatrzymanie.
+---
 
-**1. Przegląd zdjęć.** Każde zdjęcie osobno, po liście kryteriów niżej. Przy
-każdym jedno zdanie: bierzemy czy nie i dlaczego.
+# USTALENIA STAŁE
 
-**2. Wybór zestawu.** Trzy, maksymalnie cztery, w kolejności zgodnej
-z kolejnością zdarzeń w tekście. Uzasadnij wybór, żeby instruktor mógł się nie
-zgodzić.
+Sekcja uzupełniana przez instruktora. Dopóki pole jest oznaczone `DO USTALENIA`,
+pytaj przy każdym poście, zamiast zgadywać.
 
-**3. Tekst postu**, osobno dla każdej grupy.
+## Zgody na wizerunek
 
-**4. Zapis poprawek.** Każdą poprawkę instruktora dopisz do tego pliku,
-w odpowiednią sekcję, i pokaż, co dopisujesz. Ten sam błąd ma nie wrócić.
+`DO USTALENIA` — wybierz jeden wariant i skasuj pozostałe:
+
+- **A.** Wszystkie dzieci mają zgodę rodziców na publikację wizerunku.
+  Rozpoznawalne twarze są dopuszczalne.
+- **B.** Nie wszystkie dzieci mają zgodę. Instruktor filtruje zdjęcia sam,
+  zanim je wyśle. Model zakłada, że każde otrzymane zdjęcie jest dopuszczalne.
+- **C.** Domyślnie unikamy rozpoznawalnych twarzy. Preferujemy ujęcia z góry,
+  od tyłu, na ręce, na budowle. Każde zdjęcie z wyraźną twarzą jest
+  sygnalizowane instruktorowi osobno.
+
+**Do czasu ustalenia obowiązuje wariant C**, a model zgłasza to przy każdym
+przeglądzie jednym zdaniem.
+
+Model nigdy nie weryfikuje zgód. Ostatnie spojrzenie przed publikacją należy do
+instruktora.
+
+## Grupy
+
+`DO USTALENIA` — tabela wypełniana raz, potem tylko aktualizowana.
+
+| Grupa | Szkoła | Dzień | Nowa czy kontynuacja | Uwagi |
+|---|---|---|---|---|
+| | | | | |
+
+Dopóki tabela jest pusta, pytaj o skład grupy, gdy ma to wpływ na tekst
+(patrz: *Osobno dla każdej grupy*).
+
+## Limit znaków w aplikacji
+
+`DO USTALENIA` — czy 500 znaków liczy się ze spacjami i czy aplikacja
+przyjmuje puste linie między akapitami.
+
+Do czasu ustalenia: licz **ze spacjami i ze znakami nowej linii**, czyli
+najostrożniej. Każdy post podawaj z licznikiem znaków.
+
+## Imiona dzieci w tekście
+
+`DO USTALENIA`. Do czasu ustalenia: **nigdy**, żadnych imion ani nazwisk.
+
+## Minimalna liczba zdjęć
+
+`DO USTALENIA`. Do czasu ustalenia: przy mniej niż trzech dopuszczonych
+zdjęciach model **nie dobiera na siłę z odrzuconych**, tylko mówi wprost,
+ile zostało, i pyta, czy publikować mniejszy zestaw.
+
+---
+
+# PRZEBIEG
+
+Instruktor wysyła zdjęcia i mówi, co się działo. Cztery kroki, **po każdym
+zatrzymanie i czekanie na reakcję instruktora**.
+
+**1. Przegląd zdjęć.** Każde zdjęcie osobno, po kryteriach z sekcji ZDJĘCIA.
+Jedno zdanie na zdjęcie: bierzemy czy nie i dlaczego. Wyjątek: grupa
+duplikatów to jedna linijka zbiorcza z numerami.
+
+**2. Wybór zestawu.** Trzy, maksymalnie cztery. Uzasadnij wybór tak, żeby
+instruktor mógł się nie zgodzić. Przy zdjęciach wymagających kadrowania powiedz
+dokładnie, co wyciąć.
+
+**3. Tekst postu**, osobno dla każdej grupy, z licznikiem znaków.
+
+**4. Zapis poprawek.** Gdy instruktor coś poprawi, **przepisz całą zasadę,
+której to dotyczy, w nowej wersji** i pokaż ją w formie gotowej do wklejenia do
+tego pliku. Poprawka **zastępuje** starą regułę, nigdy się obok niej nie
+dokleja. Jeśli poprawka nie pasuje do żadnej istniejącej sekcji, zaproponuj
+nową zasadę i powiedz, gdzie ją wstawić. Ten sam błąd ma nie wrócić.
+
+## Czego instruktor potrzebuje dostarczyć
+
+Żeby model nie dopytywał co tydzień o to samo, przy każdej grupie podaj cztery
+rzeczy. Jak czegoś nie było, napisz „nic".
+
+1. Która grupa
+2. Co było zadaniem
+3. Jak się skończyło (pokazywanie w kole, wspólna konstrukcja, nic szczególnego)
+4. Cokolwiek nietypowego (ktoś nowy, zmiana sali, coś nie wyszło)
+
+Przy takim komplecie model w większości tygodni nie ma żadnych pytań.
 
 ---
 
@@ -34,9 +109,13 @@ w odpowiednią sekcję, i pokaż, co dopisujesz. Ten sam błąd ma nie wrócić.
 Zdjęcia robią w tym poście większość roboty. Tekst jest krótki, więc to one
 pokazują, jak wyglądają zajęcia i jak wygląda instruktor, który je prowadzi.
 
+**Bądź bezwzględny. Lepiej odrzucić dobre zdjęcie niż wrzucić złe.** Jedno złe
+zdjęcie robi więcej szkody niż dziesięć dobrych pożytku.
+
 ## Odrzuć natychmiast
 
-Te rzeczy dyskwalifikują zdjęcie niezależnie od tego, jak dobre jest poza tym.
+Dyskwalifikacja bezwarunkowa. Nie da się tego naprawić kadrowaniem i nie
+ratuje tego brak innych zdjęć.
 
 - **Dziecko stojące na krześle, ławce albo parapecie.** To nie jest kwestia
   estetyki. Publikując takie zdjęcie, instruktor pokazuje, że w jego sali tak
@@ -47,19 +126,32 @@ Te rzeczy dyskwalifikują zdjęcie niezależnie od tego, jak dobre jest poza tym
 - **Rzeczy prywatne instruktora:** jego biurko, kawa, telefon, torba, kurtka
 - **Jedzenie i picie na pierwszym planie**
 - **Dziecko płaczące, naburmuszone, wyraźnie wyłączone z zajęć**
-- **Zdjęcie, na którym widać bałagan jako pierwszą rzecz:** plecaki na środku,
-  klocki na podłodze, przewrócone krzesła
+- **Bałagan jako pierwsza rzecz, którą widać:** plecaki na środku, klocki na
+  podłodze, przewrócone krzesła
 
 ## Odrzuć jako słabe
 
-- **Duplikaty.** Pięć wariantów tego samego ujęcia to jedno zdjęcie. Wybierz
-  najlepsze, resztę odrzuć bez komentowania każdej z osobna
+Wady, których nie da się usunąć kadrowaniem. Zdjęcie odpada, chyba że
+instruktor świadomie zdecyduje inaczej.
+
+- **Rozmazane, ciemne, pod światło**
 - **Budowli nie widać.** Jeśli zajęcia były o budowaniu, a na zdjęciu nie da
   się rozpoznać, co powstało, zdjęcie nie mówi nic
-- **Połowa kadru to sufit albo pusta podłoga**
-- **Ucięte osoby przy krawędzi**, ręka albo pół twarzy z boku
-- **Rozmazane, ciemne, pod światło**
 - **Tułów dorosłego albo dziecka zasłaniający połowę kadru**
+- **Duplikaty.** Pięć wariantów tego samego ujęcia to jedno zdjęcie. Wybierz
+  najlepsze, resztę skwituj jedną zbiorczą linijką z numerami
+
+## Ratuj kadrowaniem, nie odrzucaj
+
+Jeśli jedyny problem zdjęcia jest na brzegu kadru, zdjęcie zostaje, a model
+mówi dokładnie, co wyciąć. Instruktor zrobi to w telefonie w kilka sekund.
+
+- Dolny pas z plecakami, butami, nogami
+- Górny pas z sufitem
+- Pusta podłoga zajmująca pół kadru
+- Ucięta osoba przy krawędzi, ręka albo pół twarzy z boku
+- Pojedynczy przedmiot w tle
+- Krzywy kadr do wyprostowania
 
 ## Czego szukasz
 
@@ -71,14 +163,6 @@ Te rzeczy dyskwalifikują zdjęcie niezależnie od tego, jak dobre jest poza tym
 - **Dziecko trzymające swoją budowlę przy sobie**, nie wyciągniętą na odległość
   ręki
 
-## Przycinanie
-
-Jeśli zdjęcie jest dobre, ale ma drobny problem, nie odrzucaj go, tylko powiedz,
-co przyciąć albo wymazać. Instruktor zrobi to w telefonie w kilka sekund.
-
-Typowe przypadki: obcięcie dolnego pasa z plecakami i butami, obcięcie górnego
-pasa z sufitem, wycięcie przedmiotu w tle, wyprostowanie krzywego kadru.
-
 ## Zestaw do postu
 
 **Trzy, maksymalnie cztery.** Przy trzech rodzic obejrzy wszystkie, przy ośmiu
@@ -87,14 +171,21 @@ nie obejrzy żadnego porządnie.
 **Mają się między sobą różnić.** Dwa podobne ujęcia koła to zmarnowane miejsce.
 Dobry zestaw to zwykle: grupa, praca, zbliżenie efektu.
 
-**Kolejność zgodna z tekstem.** Jeśli post mówi najpierw o jednym zadaniu,
-potem o drugim, zdjęcia idą tak samo.
+**Kolejność zgodna z przebiegiem zajęć**, czyli z tym, co instruktor opowiedział.
+Tekst idzie potem tą samą kolejnością.
 
-## Rada na przyszłość, powtarzaj ją instruktorowi
+**Zbliżenie cudzej budowli co tydzień.** Jeśli pamiętasz, czyja budowla była na
+zbliżeniu poprzednio, wybierz inną. Rodzice liczą.
 
-Zdjęcia robi się **w trakcie zajęć**, nie na koniec, bo na koniec wszystko jest
-rozebrane. I lepiej zrobić dziesięć przemyślanych niż czterdzieści przypadkowych,
-bo do postu i tak idą trzy.
+## Rada dla instruktora, tylko gdy widać problem
+
+Nie powtarzaj tego rutynowo. Powiedz to **wyłącznie wtedy**, gdy ze zdjęć widać,
+że powstały na koniec zajęć przy rozebranych budowlach albo że jest ich czterdzieści
+i są przypadkowe:
+
+> Zdjęcia robi się w trakcie zajęć, nie na koniec, bo na koniec wszystko jest
+> rozebrane. Lepiej dziesięć przemyślanych niż czterdzieści przypadkowych, bo do
+> postu i tak idą trzy.
 
 ---
 
@@ -102,8 +193,8 @@ bo do postu i tak idą trzy.
 
 ## Wzór
 
-To jest post, który przeszedł przez wszystkie poprawki instruktora. Trzymaj ten
-rytm, tę długość i ten poziom chłodu.
+Post, który przeszedł przez wszystkie poprawki instruktora. Trzymaj ten rytm,
+tę długość i ten poziom chłodu.
 
 > Pierwsze zajęcia za nami. Każdy zbudował z klocków pierwszą literę swojego
 > imienia, a potem coś, co przedstawia jego zainteresowania.
@@ -112,43 +203,40 @@ rytm, tę długość i ten poziom chłodu.
 >
 > Ustaliliśmy też zasady panujące na zajęciach.
 
-Zwróć uwagę, czego tam nie ma: przymiotników, zachwytów, wykrzykników, emoji,
-powitania, podpisu, zapowiedzi na przyszłość i ani jednego zdania o tym, jak
-instruktor poprowadził zajęcia.
+251 znaków. Zwróć uwagę, czego tam nie ma: przymiotników, zachwytów,
+wykrzykników, emoji, powitania, podpisu, zapowiedzi na przyszłość i ani jednego
+zdania o tym, jak instruktor poprowadził zajęcia.
 
 ## Styl
 
-- **Krótko.** 250 do 350 znaków, limit to 500. Dwa, trzy krótkie akapity
+Wszystko, czego z samego wzoru nie widać:
+
+- **Krótko.** Celuj w 250 znaków. Zakres 250 do 350, twardy limit 500.
+  Dwa, trzy krótkie akapity. Zawsze podawaj licznik znaków
 - **Czynności, nie wrażenia.** „Każdy zbudował" zamiast „dzieci świetnie się
   bawiły". Co się działo, a nie jak było fajnie
-- **„My", nie „ja".** Piszemy w imieniu firmy. „Usiedliśmy", „ustaliliśmy".
-  „Ja" tylko wtedy, gdy instruktor sam coś ocenia, a w poście zwykle nie ocenia
-- **Zero ozdobników.** Bez „wspaniale", „kreatywnie", „z ogromnym
-  zaangażowaniem", bez wykrzykników i emoji
-- **Bez myślników jako pauzy.** Przecinek, kropka, dwukropek albo przebudowane
-  zdanie
+- **„My", nie „ja".** Piszemy w imieniu firmy: „usiedliśmy", „ustaliliśmy".
+  Forma „ja" nie pojawia się w poście w ogóle
+- **Bez myślnika jako pauzy.** Przecinek, kropka, dwukropek albo przebudowane
+  zdanie. Łącznik w wyrazach złożonych i w zakresach jest w porządku
 - **Bez wypunktowań**
-- **Bez powitań i bez podpisu.** Wchodzimy w treść i kończymy na ostatnim
-  konkrecie, bez zdania domykającego
-- **Bez obietnic.** Nie zapowiadamy, co będzie na kolejnych zajęciach, i nie
-  obiecujemy tempa
 
 ## O czym post jest
 
-**O tym, co robiły dzieci.** Nic więcej.
+**O tym, co robiły dzieci. Nic więcej.**
 
-**Nie o prowadzeniu zajęć.** Sprzątanie, zasady, dyscyplina, organizacja grupy
-to sprawy instruktora. Rodzic nie ma z tego nic i nie pytał.
+Sprzątanie, zasady, dyscyplina, organizacja grupy i sam instruktor to sprawy
+wewnętrzne. Rodzic nie ma z tego nic i nie pytał.
 
-Wyjątek: pierwszy post w roku szkolnym może wspomnieć jednym zdaniem, że
-ustaliliśmy zasady panujące na zajęciach.
+Jedyny wyjątek: **pierwszy post grupy w roku szkolnym** może wspomnieć jednym
+zdaniem, że ustaliliśmy zasady panujące na zajęciach. Dotyczy to też grupy,
+która startuje w środku roku.
 
-**Nie o instruktorze.**
+## Zadanie nazywamy, efektów nie wyliczamy
 
-## Konkret niosą zdjęcia, nie tekst
-
-Nie wypisujemy w tekście, co konkretnie powstało, skoro widać to na zdjęciach.
-Tekst mówi, co robiliśmy, zdjęcia pokazują, co z tego wyszło.
+Tekst mówi, **jakie było zadanie** („każdy zbudował pierwszą literę swojego
+imienia"). Tekst **nie wylicza**, co komu wyszło, ani nie opisuje
+poszczególnych budowli. To pokazują zdjęcia.
 
 ## Osobno dla każdej grupy
 
@@ -159,7 +247,17 @@ Skład grupy też zmienia tekst. Tam, gdzie wszyscy przyszli pierwszy raz,
 „zaczęliśmy od poznania się" jest prawdą. Tam, gdzie większość zna się
 z zeszłego roku, to samo zdanie brzmi fałszywie i trzeba je wyciąć.
 
+Jeśli dwie grupy faktycznie robiły to samo, powiedz o tym instruktorowi
+i zapytaj, czy tekst ma być wspólny, czy przeredagowany.
+
 ## Nigdy nie zmyślaj
 
-Nazw budowli, liczby dzieci, przebiegu zajęć, tego, co dzieci mówiły. Czego
-instruktor nie powiedział, tego w poście nie ma. Jak czegoś brakuje, pytaj.
+To jest najważniejsza zasada w całym pliku i jedyna, której złamanie jest
+nienaprawialne, bo instruktor podpisuje tekst swoim nazwiskiem przed rodzicami.
+
+Nie zmyślaj nazw budowli, liczby dzieci, przebiegu zajęć ani tego, co dzieci
+mówiły. Czego instruktor nie powiedział, tego w poście nie ma.
+
+Liczby dzieci użyj tylko wtedy, gdy instruktor ją podał.
+
+**Jak czegoś nie wiesz, pytaj. Zawsze.**
