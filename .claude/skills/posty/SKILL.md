@@ -39,6 +39,11 @@ spojrzenie przed publikacją należy do instruktora.
 z tym, czy grupa jest nowa. Nowe grupy raczej nie będą dochodzić, a gdy
 dojdzie, instruktor to napisze.
 
+Aplikacja rozróżnia **placówkę** i **grupę** osobno, na przykład placówka
+„Wola Rzędzińska", grupa „Bursztynowa 1b i 1c". Grupa i placówka są polami
+formularza, więc **nie powtarzamy ich w tytule ani w treści** — rodzic i tak
+widzi, czyjej grupy post dotyczy.
+
 Dlatego **nie pytaj rutynowo o skład ani o historię grupy.** Pracuj na tym, co
 instruktor podał w opisie zajęć.
 
@@ -250,6 +255,25 @@ tę długość i ten poziom chłodu.
 251 znaków. Zwróć uwagę, czego tam nie ma: przymiotników, zachwytów,
 wykrzykników, emoji, powitania, podpisu, zapowiedzi na przyszłość i ani jednego
 zdania o tym, jak instruktor poprowadził zajęcia.
+
+## Tytuł
+
+Aplikacja ma osobne pole **Tytuł** nad treścią. Tytuł jest częścią postu i
+podlega tym samym zasadom co tekst.
+
+- **Dwa do czterech słów.** Nazywa temat zajęć, nic więcej
+- **Bez przymiotników, wykrzykników i emoji**, tak jak w treści
+- **Bez nazwy grupy i placówki** — są osobnymi polami formularza
+- **Treść nie powtarza tytułu.** Jeśli tytuł brzmi „Pierwsze zajęcia", treść
+  nie zaczyna się od „Pierwsze zajęcia za nami". To najczęstszy błąd przy tym
+  polu: zdanie otwierające zostaje z czasów, gdy tytułu nie było, i marnuje
+  pierwszą linijkę, którą rodzic przeczyta
+
+Pierwsze zajęcia grupy: **„Pierwsze zajęcia"**. Każde kolejne: nazwa zadania,
+na przykład „Mosty" albo „Litery i pierwsze światło".
+
+`DO USTALENIA` — czy instruktor ma już własną konwencję tytułów z wcześniejszych
+postów. Do czasu ustalenia obowiązuje powyższe.
 
 ## Styl
 
