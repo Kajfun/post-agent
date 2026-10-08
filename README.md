@@ -10,24 +10,21 @@ zgubioną w czacie.
 
 ---
 
-## Najpierw: pięć rzeczy do ustalenia
+## Ustalenia
 
-W `.claude/skills/posty/SKILL.md` jest sekcja **USTALENIA STAŁE** z pięcioma
-polami oznaczonymi `DO USTALENIA`. Każde ma na razie bezpieczne zachowanie
-domyślne, więc da się pracować bez nich — ale dopóki są puste, model będzie
-co tydzień dopytywał o to samo.
+Cztery z pięciu pól w sekcji **USTALENIA STAŁE** są wypełnione:
 
-| Pole | Dlaczego to ważne | Zachowanie do czasu ustalenia |
-|---|---|---|
-| **Zgody na wizerunek** | Największa dziura w pierwotnych zasadach. Zakazywały kartki z nazwiskami, a o twarzach dzieci milczały | Unikamy rozpoznawalnych twarzy, każda wyraźna jest zgłaszana |
-| **Lista grup** | Skład grupy zmienia tekst: „zaczęliśmy od poznania się" jest fałszem w grupie, która zna się z zeszłego roku | Pytanie przy każdym poście |
-| **Limit znaków** | Czy 500 to ze spacjami i czy aplikacja przyjmuje puste linie | Liczone najostrożniej, ze spacjami i znakami nowej linii |
-| **Imiona dzieci** | Zasady zakazywały nazwisk na papierach, o imionach w tekście nie mówiły | Nigdy |
-| **Minimum zdjęć** | Co robić, gdy po ostrej selekcji zostają dwa | Nie dobieramy z odrzuconych, pytamy |
+| Pole | Ustalenie |
+|---|---|
+| **Zgody na wizerunek** | Wszystkie dzieci mają zgodę, rozpoznawalne twarze są OK. Zmiana choćby dla jednego dziecka = aktualizacja tej sekcji **przed** postem |
+| **Lista grup** | Instruktor sam opisuje grupę przy każdym poście. Model nie pyta rutynowo o skład ani historię grupy |
+| **Limit znaków** | 500 liczone ze spacjami i znakami nowej linii, najostrożniej. Celujemy w okolice 250 |
+| **Imiona dzieci** | Nigdy |
+| **Minimum zdjęć** | Otwarte. Przy mniej niż trzech model pyta, zamiast dobierać z odrzuconych |
 
-Wypełnij je raz i przestajemy o tym gadać.
-
----
+Dodana też zasada **Jak pokazywać wynik przeglądu**: krok 1 wypisuje dwie
+listy, dopuszczone i odrzucone, i przy każdym odrzuconym podaje powód — żeby
+dało się następnym razem zrobić to zdjęcie lepiej.
 
 ## Jak tego używać co tydzień
 
