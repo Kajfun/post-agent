@@ -96,9 +96,14 @@ zatrzymanie i czekanie na reakcję instruktora**.
 Wynik podawaj w dwóch listach, dopuszczone i odrzucone, zawsze z powodem przy
 każdym zdjęciu — format opisany w *Jak pokazywać wynik przeglądu*.
 
-**2. Wybór zestawu.** Trzy, maksymalnie cztery. Uzasadnij wybór tak, żeby
-instruktor mógł się nie zgodzić. Przy zdjęciach wymagających kadrowania powiedz
-dokładnie, co wyciąć.
+**2. Zestaw gotowy do wklejenia.** Trzy, maksymalnie cztery. **Model sam
+przycina zdjęcia i oddaje gotowe pliki**, ponumerowane w kolejności do postu.
+Nie opisuje, co instruktor ma wyciąć, i nie każe mu wybierać — instruktor
+wybrałby szybciej sam, więc wskazywanie jest dla niego stratą czasu.
+
+Przy każdym pliku jedno zdanie: dlaczego jest w zestawie i co zostało
+przycięte. Instruktor nadal może się nie zgodzić, tylko nie musi nic robić,
+żeby się zgodzić.
 
 **3. Tekst postu**, osobno dla każdej grupy, z licznikiem znaków.
 
@@ -192,8 +197,29 @@ Dobry zestaw to zwykle: grupa, praca, zbliżenie efektu.
 **Kolejność zgodna z przebiegiem zajęć**, czyli z tym, co instruktor opowiedział.
 Tekst idzie potem tą samą kolejnością.
 
+**Każda podgrupa robocza musi trafić do zestawu.** To jest twardy wymóg, nie
+preferencja. Dzieci pracują przy stanowiskach po jednym albo po dwoje, a
+instruktor robi zdjęcia każdemu stanowisku osobno. Jeśli któreś stanowisko
+wypadnie z zestawu, rodzic tego dziecka nie zobaczy go w poście w ogóle.
+
+Dlatego przed wyborem policz stanowiska i upewnij się, że każde ma swoje
+zdjęcie. Przy trzech stanowiskach zestaw to zwykle zdjęcie grupowe plus po
+jednym na stanowisko, czyli cztery.
+
+Ten wymóg **wyprzedza** regułę „dobry zestaw to grupa, praca, zbliżenie
+efektu". Jeśli najlepsze zdjęcie zbliżeniowe powiela stanowisko, które już
+jest w zestawie, a inne stanowisko zostałoby bez zdjęcia, zbliżenie wypada.
+Powiedz o tym instruktorowi i zostaw je jako zapasowe.
+
 **Zbliżenie cudzej budowli co tydzień.** Jeśli pamiętasz, czyja budowla była na
 zbliżeniu poprzednio, wybierz inną. Rodzice liczą.
+
+## Regulamin na ekranie, sprawa zamknięta
+
+Na zdjęciach grupowych z pierwszych zajęć regulamin bywa wyświetlony z telefonu
+instruktora, razem z paskiem stanu: godziną, zasięgiem i baterią. **Nie da się
+tego puścić na pełnym ekranie, zostaje tak jak jest.** Nie zgłaszaj tego i nie
+proponuj poprawy.
 
 ## Rada dla instruktora, tylko gdy widać problem
 

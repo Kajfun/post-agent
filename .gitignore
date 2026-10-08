@@ -1,6 +1,7 @@
-__pycache__/
 *.pyc
-.venv/
-do-wyslania/
-zdjecia/
 .env
+.venv/
+__pycache__/
+do-wyslania/
+gotowe/
+zdjecia/
