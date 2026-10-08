@@ -113,6 +113,18 @@ Robi tylko to, czego nie trzeba płacić modelowi:
 Reszta kryteriów (dziecko na krześle, kartka z nazwiskami, bałagan) wymaga
 patrzenia i zostaje dla modelu.
 
+**Progi są celowo łagodne i nie należy ich zaostrzać.** Ten skrypt nie jest
+selekcją, tylko odsiewem oczywistości — ocena należy do modelu, a model kosztuje
+grosze. Nie ma powodu ryzykować wyrzuceniem dobrego zdjęcia, żeby zaoszczędzić
+ułamek grosza. Zdjęcie wątpliwe zawsze przechodzi dalej.
+
+Realna wartość tego skryptu to **duplikaty**: pięć wariantów jednego ujęcia
+odsiewa się darmo i bezbłędnie. Rozmycie i jasność łapią tylko przypadki
+bezdyskusyjne.
+
+Jeśli coś odpadło niesprawiedliwie, uruchom z `--wszystko` (odrzucone wylądują
+w podkatalogu) albo podnieś `--prog-ostrosci`.
+
 **Pierwszy raz skalibruj próg ostrości na swoich zdjęciach** — zależy od
 aparatu i światła w sali:
 

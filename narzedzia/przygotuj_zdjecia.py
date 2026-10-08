@@ -35,11 +35,20 @@ except ImportError:
 
 ROZSZERZENIA = {".jpg", ".jpeg", ".png", ".heic", ".webp"}
 
-# Progi dobrane ostroznie: maja odrzucac tylko to, co jest ewidentnie zle.
-# Zdjecie z granicy zostaje i ocenia je model.
-PROG_OSTROSCI = 120.0      # wariancja laplasjanu; nizej = rozmazane
-PROG_CIEMNOSCI = 55.0      # srednia jasnosc 0-255; nizej = za ciemne
-PROG_PRZESWIETLENIA = 215.0  # srednia jasnosc; wyzej = przeswietlone
+# Progi sa celowo LAGODNE i nie powinny byc zaostrzane.
+#
+# Ten skrypt nie jest selekcja, tylko odsiewem oczywistosci. Ocena nalezy do
+# modelu, a model kosztuje grosze: przy czterech grupach tygodniowo to rzad
+# wielkosci zlotowki miesiecznie. Nie ma wiec zadnego powodu, zeby ryzykowac
+# wyrzuceniem dobrego zdjecia dla oszczednosci ulamka groszа. Zdjecie
+# watpliwe ZAWSZE przechodzi dalej.
+#
+# Realna wartosc tego skryptu to duplikaty: piec wariantow jednego ujecia
+# instruktor widzi szybciej niz model, a ich odsianie nic nie kosztuje.
+# Rozmycie i jasnosc to tylko te przypadki, ktore sa bezdyskusyjne.
+PROG_OSTROSCI = 60.0       # wariancja laplasjanu; nizej = rozmazane bezdyskusyjnie
+PROG_CIEMNOSCI = 35.0      # srednia jasnosc 0-255; nizej = prawie czarne
+PROG_PRZESWIETLENIA = 235.0  # srednia jasnosc; wyzej = prawie biale
 PROG_DUPLIKATU = 8         # odleglosc Hamminga miedzy hashami; nizej = duplikat
 
 
@@ -243,6 +252,11 @@ def main() -> int:
         print(
             "\nUWAGA: zostaly mniej niz trzy zdjecia. Zgodnie z zasadami nie "
             "dobieraj z odrzuconych na sile, tylko zdecyduj swiadomie."
+        )
+    if odpadly:
+        print(
+            "\nJesli cokolwiek odpadlo niesprawiedliwie, uruchom z --wszystko "
+            "(odrzucone laduja w podkatalogu) albo podnies --prog-ostrosci."
         )
     return 0
 
