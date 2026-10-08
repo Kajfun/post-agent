@@ -93,10 +93,45 @@ drobiazgi w tle: kartkę z nazwiskami, kurtkę, dziecko klęczące na krześle.
 
 ```
 .claude/skills/posty/SKILL.md   zasady, jedyne źródło prawdy
-narzedzia/przygotuj_zdjecia.py  mechaniczna selekcja i zmniejszanie zdjęć
-narzedzia/post.py               cały przebieg przez API
-testy/test_post.py              weryfikacja kształtu zapytania, bez sieci
+narzedzia/analiza.py            RDZEŃ: widzi zdjęcia, ocenia je i pisze post
+narzedzia/klatki.py             wyciąga najlepsze klatki z nagrań
+narzedzia/przygotuj_zdjecia.py  opcjonalny odsiew duplikatów przed modelem
+narzedzia/post.py               wariant rozmowy w czterech krokach
+testy/                          testy wszystkich trzech, bez wychodzenia do sieci
 ```
+
+### Co widzi co
+
+To jest najważniejsze rozróżnienie w całym repo:
+
+| Plik | Czy widzi zdjęcie | Co potrafi |
+|---|---|---|
+| `przygotuj_zdjecia.py` | **nie**, liczy piksele | duplikaty, rozmycie, jasność |
+| `klatki.py` | **nie**, liczy piksele | wybór najostrzejszych klatek z nagrania |
+| `analiza.py` | **tak**, woła model | wszystko: bałagan, kartka z nazwiskami, dziecko na krześle, wybór zestawu, tekst postu |
+
+`analiza.py` jest mózgiem. Dwa pozostałe to tylko tanie przygotowanie materiału
+i **da się bez nich pracować** — można wysłać zdjęcia prosto do `analiza.py`.
+
+### `klatki.py` — nagrania
+
+Model nie przyjmuje plików wideo, przyjmuje obrazy. Więc z nagrania wyjmujemy
+klatki. Okazuje się to zaletą: w dwudziestosekundowym nagraniu jest zwykle
+lepszy kadr niż na którymkolwiek zdjęciu zrobionym w pośpiechu.
+
+```bash
+python3 narzedzia/klatki.py ~/zdjecia/czwartek          # cały katalog z nagraniami
+python3 narzedzia/klatki.py ~/zdjecia/czwartek --ile 2
+```
+
+Nagranie dzielone jest na tyle równych odcinków, ile klatek chcesz, i z każdego
+brana jest **najostrzejsza** — dzięki temu klatki są z różnych momentów zajęć,
+a nie trzy razy z tej samej sekundy. Klatki rozmazane odpadają tym samym progiem
+co zdjęcia: pusty slot jest lepszy niż rozmazany kadr dobrany na siłę. Nagranie
+rozmazane od początku do końca nie daje nic.
+
+Wymaga `ffmpeg` (`sudo apt install ffmpeg` albo `brew install ffmpeg`).
+Wynik ląduje w `z-nagran/` i traktuje się go dalej jak zwykłe zdjęcia.
 
 ### `przygotuj_zdjecia.py`
 
