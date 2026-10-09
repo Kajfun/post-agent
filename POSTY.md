@@ -1,16 +1,21 @@
 # Rejestr postów
 
-Co przeszło przez ten projekt. Uzupełniane przy każdym poście, żeby przy
-zaległościach było wiadomo, co już jest, a co czeka.
+Co jest dodane w firmowej aplikacji. **Źródłem prawdy jest instruktor** — ten
+projekt nie ma wglądu w aplikację i nie liczy sam z siebie.
 
-Rejestr nie wie, co faktycznie wisi w firmowej aplikacji — notuje tylko to,
-co tu opracowaliśmy. Kolumna „Opublikowany" jest od instruktora.
+## Wola Rzędzińska
 
-| # | Data zajęć | Placówka | Grupa | Tytuł | Zdjęć | Znaków | Opublikowany |
-|---|---|---|---|---|---|---|---|
-| 1 | — | Wola Rzędzińska | Bursztynowa 1b i 1c | Pierwsze zajęcia | 4 z 9 | 238 | tak |
+| # | Grupa | Tytuł | Zdjęć | Znaków | Przez kogo |
+|---|---|---|---|---|---|
+| 1 | ? | ? | ? | ? | ręcznie |
+| 2 | ? | ? | ? | ? | ręcznie |
+| 3 | Bursztynowa 1b i 1c | Pierwsze zajęcia | 4 z 9 | 238 | tu opracowany |
 
-## Zaległości
+Wola Rzędzińska: **3 posty, komplet.**
 
-Nic nie zgłoszone. Instruktor wspominał o kilku zaległych grupach — dopisze,
-gdy będzie wiadomo które.
+Przy dwóch pierwszych brak szczegółów — powstały przed tym projektem albo
+ręcznie. Do uzupełnienia, gdy będzie okazja.
+
+## Pozostałe placówki
+
+Nic jeszcze nie zgłoszone.
