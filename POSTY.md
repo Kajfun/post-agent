@@ -1,21 +1,14 @@
 # Rejestr postów
 
 Co jest dodane w firmowej aplikacji. **Źródłem prawdy jest instruktor** — ten
-projekt nie ma wglądu w aplikację i nie liczy sam z siebie.
+projekt nie ma wglądu w aplikację.
 
-## Wola Rzędzińska
-
-| # | Grupa | Tytuł | Zdjęć | Znaków | Przez kogo |
+| Placówka | Grupa | Temat | Znaków | Zdjęcia | Tekst |
 |---|---|---|---|---|---|
-| 1 | ? | ? | ? | ? | ręcznie |
-| 2 | ? | ? | ? | ? | ręcznie |
-| 3 | Bursztynowa 1b i 1c | Pierwsze zajęcia | 4 z 9 | 238 | tu opracowany |
+| Wola Rzędzińska | Bursztynowa 1b i 1c | litery imion, zainteresowania, tablety | 238 | wybrane i przycięte tutaj (4 z 9) | tutaj |
+| Blitowska Góra | ? | pierwsze zajęcia, nasze wakacje | 161 lub 245 | własne | tutaj |
+| SP17 | ? | pierwsze zajęcia, nasze wakacje | 161 lub 245 | własne | tutaj |
+| ? | ? | wcześniejsze, przed tym projektem | ? | ? | ręcznie |
 
-Wola Rzędzińska: **3 posty, komplet.**
-
-Przy dwóch pierwszych brak szczegółów — powstały przed tym projektem albo
-ręcznie. Do uzupełnienia, gdy będzie okazja.
-
-## Pozostałe placówki
-
-Nic jeszcze nie zgłoszone.
+Znaki przy dwóch ostatnich zależą od tego, którą wersję instruktor wkleił:
+bez tabletów czy z tabletami.
