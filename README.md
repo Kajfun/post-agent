@@ -96,6 +96,8 @@ drobiazgi w tle: kartkę z nazwiskami, kurtkę, dziecko klęczące na krześle.
 narzedzia/analiza.py            RDZEŃ: widzi zdjęcia, ocenia je i pisze post
 narzedzia/klatki.py             wyciąga najlepsze klatki z nagrań
 narzedzia/przygotuj_zdjecia.py  opcjonalny odsiew duplikatów przed modelem
+start/                          przyciski do klikania (Windows, Mac, Linux)
+narzedzia/uruchom.py            przygotowuje środowisko i odpala narzędzia
 narzedzia/przeglad.py           strona do zatwierdzania, lokalnie
 narzedzia/rozpoznaj.py          jednorazowy zrzut formularza firmowej aplikacji
 narzedzia/post.py               wariant rozmowy w czterech krokach
@@ -178,6 +180,33 @@ Nic nie jest kasowane — wynik ląduje w podkatalogu `do-wyslania/`.
 
 ---
 
+## Uruchamianie: kliknij i działa
+
+Nie musisz znać terminala ani nic instalować ręcznie. W katalogu `start/`
+są przyciski:
+
+| Klikasz | Co robi |
+|---|---|
+| **1. Rozpoznaj formularz** | jednorazowy zrzut budowy formularza w firmowej aplikacji |
+| **2. Zatwierdz posty** | otwiera stronę do zatwierdzania |
+
+Na Windows klikasz plik `.bat`, na Macu `.command`, na Linuksie `.command`
+albo `start/_uruchom.sh <nazwa>` z terminala.
+
+**Pierwsze kliknięcie trwa kilka minut** — zakłada własne środowisko Pythona
+obok projektu, dociąga biblioteki i przeglądarkę. Każde następne startuje od
+razu. Jedyne, co musisz mieć wcześniej, to Python; jeśli go nie ma, przycisk
+powie, skąd go wziąć.
+
+Gdy coś pójdzie nie tak, zobaczysz zdanie po ludzku, a nie ścianę błędów —
+szczegóły techniczne lądują w `ostatni-blad.txt`.
+
+Na Macu przy pierwszym kliknięciu system może zapytać, czy na pewno otworzyć
+plik z internetu. Jeśli nie da się kliknąć, otwórz prawym przyciskiem
+i wybierz Otwórz.
+
+---
+
 ## Publikacja: zatwierdzanie i wysyłka
 
 Docelowy przebieg, żeby nie przepisywać niczego ręcznie do
@@ -185,10 +214,10 @@ Docelowy przebieg, żeby nie przepisywać niczego ręcznie do
 
 ```bash
 # 1. analiza i teksty  ->  posty.json
-# 2. przejrzyj i zatwierdź
-python3 narzedzia/przeglad.py posty.json
+# 2. przejrzyj i zatwierdź        (albo: start/2. Zatwierdz posty)
+python3 narzedzia/uruchom.py przeglad posty.json
 # 3. wypełnij formularze i wgraj zdjęcia  (w budowie)
-python3 narzedzia/publikuj.py zatwierdzone.json
+python3 narzedzia/uruchom.py publikuj zatwierdzone.json
 ```
 
 ### `przeglad.py` — strona do zatwierdzania
@@ -215,9 +244,10 @@ Logowanie zostaje w profilu przeglądarki w `~/.akademia-profil` na twoim
 dysku. Skrypt nie zapisuje hasła i nie zbiera wpisanych wartości, tylko
 etykiety, nazwy i identyfikatory pól.
 
+Najprościej: kliknij **start/1. Rozpoznaj formularz**. Z terminala:
+
 ```bash
-pip install playwright && playwright install chromium
-python3 narzedzia/rozpoznaj.py
+python3 narzedzia/uruchom.py rozpoznaj
 ```
 
 ---
