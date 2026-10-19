@@ -96,6 +96,8 @@ drobiazgi w tle: kartkę z nazwiskami, kurtkę, dziecko klęczące na krześle.
 narzedzia/analiza.py            RDZEŃ: widzi zdjęcia, ocenia je i pisze post
 narzedzia/klatki.py             wyciąga najlepsze klatki z nagrań
 narzedzia/przygotuj_zdjecia.py  opcjonalny odsiew duplikatów przed modelem
+narzedzia/przeglad.py           strona do zatwierdzania, lokalnie
+narzedzia/rozpoznaj.py          jednorazowy zrzut formularza firmowej aplikacji
 narzedzia/post.py               wariant rozmowy w czterech krokach
 testy/                          testy wszystkich trzech, bez wychodzenia do sieci
 ```
@@ -176,6 +178,50 @@ Nic nie jest kasowane — wynik ląduje w podkatalogu `do-wyslania/`.
 
 ---
 
+## Publikacja: zatwierdzanie i wysyłka
+
+Docelowy przebieg, żeby nie przepisywać niczego ręcznie do
+`app.akademiarobotyka.pl`:
+
+```bash
+# 1. analiza i teksty  ->  posty.json
+# 2. przejrzyj i zatwierdź
+python3 narzedzia/przeglad.py posty.json
+# 3. wypełnij formularze i wgraj zdjęcia  (w budowie)
+python3 narzedzia/publikuj.py zatwierdzone.json
+```
+
+### `przeglad.py` — strona do zatwierdzania
+
+Otwiera lokalną stronę z kartą na każdą grupę: zdjęcia do powiększenia, tytuł,
+treść z licznikiem znaków na żywo i przełącznik „publikuj". Poprawiasz tekst
+na miejscu, odznaczasz to, co nie ma iść, klikasz raz. Zatwierdzone lądują
+w `zatwierdzone.json`.
+
+Bez żadnych bibliotek spoza Pythona. Serwer słucha wyłącznie na `127.0.0.1`
+i kończy pracę po zatwierdzeniu. Ścieżki do zdjęć nigdy nie opuszczają
+serwera — przeglądarka dostaje numery i nazwy plików, a przy zatwierdzaniu
+odsyła tylko numer postu oraz poprawiony tytuł i treść. Treść ponad 500 znaków
+jest odrzucana po stronie serwera, nie tylko ukryciem przycisku.
+
+### `rozpoznaj.py` — jednorazowy zrzut formularza
+
+Uruchamiasz **raz**, zanim powstanie `publikuj.py`. Otwiera przeglądarkę,
+logujesz się ręcznie i otwierasz okienko „Dodaj post", a skrypt spisuje, jak
+nazywają się pola, i robi zrzut ekranu. Dzięki temu `publikuj.py` trafia
+w pola od pierwszego razu, zamiast zgadywać ze zrzutu ekranu.
+
+Logowanie zostaje w profilu przeglądarki w `~/.akademia-profil` na twoim
+dysku. Skrypt nie zapisuje hasła i nie zbiera wpisanych wartości, tylko
+etykiety, nazwy i identyfikatory pól.
+
+```bash
+pip install playwright && playwright install chromium
+python3 narzedzia/rozpoznaj.py
+```
+
+---
+
 ## Stan weryfikacji
 
 - `przygotuj_zdjecia.py` — uruchomiony na wygenerowanym zestawie testowym
@@ -188,6 +234,14 @@ Nic nie jest kasowane — wynik ląduje w podkatalogu `do-wyslania/`.
   kroków). Pierwsze prawdziwe uruchomienie może wymagać drobnej poprawki.
 - Progi w `przygotuj_zdjecia.py` dobrane na syntetycznych obrazach, nie na
   zdjęciach z twoich zajęć. Stąd tryb `--kalibruj`.
+- `przeglad.py` — 28 asercji przechodzi (serwowanie strony i zdjęć, walidacja
+  zatwierdzania, odrzucanie błędnych żądań), strona obejrzana w jasnym
+  i ciemnym motywie oraz na szerokości telefonu.
+- `rozpoznaj.py` — **nieuruchomiony**, bo `app.akademiarobotyka.pl` jest poza
+  zasięgiem środowiska, w którym powstał, i nie ma tam loginu. To skrypt
+  jednorazowy, uruchamiany na komputerze instruktora.
+- `publikuj.py` — **jeszcze nie istnieje.** Powstanie na podstawie tego, co
+  zwróci `rozpoznaj.py`.
 
 ---
 
