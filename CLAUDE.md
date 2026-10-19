@@ -32,3 +32,37 @@ domyślne — nie wymyślaj własnego.
 
 Przebieg ma cztery kroki i **zatrzymanie po każdym**. Nie przeskakuj do
 tekstu, zanim instruktor zaakceptuje wybór zdjęć.
+
+## Gdzie stoimy i co jest następne
+
+Stan na teraz:
+
+| | |
+|---|---|
+| Zasady, sprawdzone na trzech prawdziwych postach | działa |
+| `analiza.py` — ocena zdjęć i tekst w jednym wywołaniu API | napisane, **nieuruchomione na prawdziwym API** |
+| `klatki.py`, `przygotuj_zdjecia.py` | działa |
+| `przeglad.py` — strona do zatwierdzania | działa, 28 asercji |
+| `uruchom.py` + `start/` — przyciski bez terminala | działa, 33 asercje |
+| **`publikuj.py` — wypełnianie formularza w firmowej aplikacji** | **nie istnieje** |
+
+**Następny krok: `publikuj.py`.** Ma wypełniać formularz „Nowy post grupowy"
+na `https://app.akademiarobotyka.pl/aktualnosci`, czytając `zatwierdzone.json`
+z `przeglad.py`: placówka, grupa, tytuł, treść, wgranie zdjęć w kolejności,
+przełącznik widoczności dla rodziców. **Zatrzymuje się przed publikacją** —
+instruktor klika sam.
+
+Żeby to napisać, trzeba najpierw uruchomić `narzedzia/rozpoznaj.py` (przycisk
+`start/1. Rozpoznaj formularz`). Zrzuci on budowę formularza do katalogu
+`rozpoznanie/`. Bez tego selektory są zgadywaniem ze zrzutu ekranu.
+
+To wymaga komputera instruktora: zalogowanej przeglądarki i dostępu do tej
+strony. Sesja w chmurze tego nie zrobi.
+
+### Czego nie weryfikowano
+
+- `analiza.py` nigdy nie wywołało prawdziwego API — brak klucza w środowisku,
+  w którym powstało. Sprawdzone offline na atrapie klienta.
+- Przycisków `.bat` i `.command` nie klikano na Windowsie ani na Macu.
+- Progi w `przygotuj_zdjecia.py` dobrane na obrazach syntetycznych. Jest tryb
+  `--kalibruj` do ustawienia ich na prawdziwych zdjęciach.
